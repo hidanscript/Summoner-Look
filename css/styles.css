@@ -1,0 +1,268 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	height: 100vh;
+	display: flex;
+	background-image: url("../img/bg.jpg"); 
+	background-size: 100%, 100%;
+	position: relative;
+}
+
+header {
+	width: 100%;
+	background: rgba(34,34,34,.8);
+	position: fixed;
+}
+
+.header {
+	width: 80%;
+	margin: 0 auto;
+	background-color: white;
+}
+
+.header h2 {
+	font-family: 'Work Sans', sans-serif;
+	float: left;
+	position: relative;
+	color: white;
+	font-weight: bold;
+	padding: 5px;
+}
+
+nav {
+	float: right;
+}
+
+nav ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+nav li {
+	display: inline-block;
+	margin-left: 70px;
+	padding-top: 30px;
+	padding: 10px;
+}
+
+nav ul li a {
+	color: white;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 14px;
+	font-family: 'Work Sans', sans-serif;
+	font-weight: bold;
+}
+
+nav ul li a:hover {
+	color: lightgray;
+	transition: all 200ms ease-in;
+}
+
+nav ul li a:hover::before {
+	color: white;
+	transition: all 200ms ease-in;
+}
+
+h1 {
+	padding: 10px;
+	text-shadow: 3px;
+	font-family: 'Work Sans', sans-serif;
+	color: #FFFFFF;
+}
+
+.container {
+
+	position: absolute;
+	text-align: center;
+	background: rgba(0,0,0,.5);
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	border-radius: 5px;
+	width: 400px;
+	height: 100px;
+
+}
+
+.container input {
+	width: 200px;
+	height: 20px;
+}
+
+.summoner-search {
+	background: rgba(64,64,64.6);
+	border-radius: 5px;
+	align-items: center;
+	display: inline-flex;
+	padding: 2px;
+	position: relative;
+}
+
+.summoner-search i {
+	cursor: pointer;
+	margin-right: 2px;
+}
+
+.summoner-search-input {
+	border: none;
+	outline: none;
+	background: none;
+	color: white;
+	font-size: 16px;
+	font-family: 'Work Sans', sans-serif;
+	padding: 2px;
+
+}
+
+.summoner-search-input:hover > .container input {
+	width: 200px;
+	padding: 0 6px;
+}
+
+footer {
+	top: 99%;
+	left: 50%;	
+	text-align: center;
+	display: inline-block;
+	position: fixed;
+	transform: translate(-50%, -50%);
+}
+
+footer p {
+	color: lightgray;
+	text-align: center;
+	font-family: 'Work Sans', sans-serif;
+	font-weight: italic;
+	font-size: 12px;
+}
+
+.logo img {
+	width: 350px;
+	left: 50%;
+	top: 50%;
+	position: absolute;
+	transform: translate(-50%, -130%);
+}
+
+#region-value {
+	left: 100%;
+	transform: translate(-100%);
+	height: 100%;
+	float: right;
+	position: absolute;
+	align-items: center;
+	background-color: rgba(64,64,64,.5);
+	color: white;
+	outline: none;
+	border-color: rgba(128,128,128,.0);
+	font-family: 'Work Sans', sans-serif;
+	font-weight: bold;
+	font-size: 12px;
+	border-width: 2px;
+	border-radius: 5px;
+	height: 30px;
+}
+
+#region-value option {
+	background-color: rgba(0,0,0,1);
+	font-family: 'Work Sans', sans-serif;
+	font-weight: bold;
+	font-size: 12px;
+}
+
+h2 {
+	position: relative;
+	transform: translate(30%, 0%);
+}
+
+h2 a {
+	text-decoration: none;
+	color: white;
+	font-family: 'Work Sans', sans-serif;
+}
+
+.filter {
+	width: 100%;
+	height: 100%;
+	background-color: rgba(200,0,200,.1);
+}
+
+.profile-board {
+	position: absolute;
+	display: flex;
+	width: 370px;
+	height: 60px;
+	background-color: rgba(64,64,64,.6);
+	border-radius: 8px;
+	border: 5px black;
+	top: 50%;
+	left: 20%;
+	transform: translate(-50%,-50%);
+	margin: 3px;
+	padding: 10px;
+}
+
+#summoner-name {
+	
+	display: inline-block;
+	position: absolute;
+	left: 63%;
+	margin-top: 6px;
+	font-family: 'Work Sans', sans-serif;
+	font-weight: bold;
+	color: white;
+	transform: translate(-50%,-50%);
+}
+
+#summoner-level {
+	font-family: 'Work Sans', sans-serif;
+	font-weight: bold;
+	color: white;
+	display: inline-block;
+	font-size: 14px;
+	position: absolute;
+	left: 63%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+}
+
+.profile-icon {
+	margin: 0;
+	padding: 0;
+	width: 60px;
+	height: 60px;
+	background-color: rgba(0,0,0,.5);
+	border-radius: 5px;
+	position: relative;
+}
+
+#profile-icon-icon {
+	height: 100%;
+}
+
+#profile-rank {
+	width: 60px;
+	height: 60px;
+	margin-left: 20px;
+}
+
+#profile-rank-icon {
+	height: 100%;
+}
+
+#summoner-rank {
+	font-family: 'Work Sans', sans-serif;
+	font-weight: initial;
+	color: gray;
+	display: inline-block;
+	font-size: 12px;
+	position: absolute;
+	left: 63%;
+	top: 80%;
+	transform: translate(-50%,-50%);
+}

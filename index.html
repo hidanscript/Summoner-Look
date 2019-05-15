@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
+	<link rel="shortcut icon" type="image/icon-x" href="img/icon.png">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
+	<title>Summoner Look - League of Legends</title>
+</head>
+<body>
+
+	<header>
+		<div class="header">
+			<h2><a href="index.html">Summoner Look</a></h2>
+			<nav>
+				<ul>
+					<li><a href="#">TOPLISTS</a></li>
+					<li><a href="#">CHAMPIONS</a></li>
+					<li><a href="#">STREAMS</a></li>
+					<li><a href="#">LADDER</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<div class="logo">
+		<img src="img/logo.png">
+	</div>
+
+	<div class = "container">
+		<h1>Summoner Look</h1>
+		<div class="summoner-search">
+			<i class="fas fa-search"></i>
+			<input type="textfield" placeholder="Summoner Name" class="summoner-search-input" spellcheck="false" id="search-input">
+			<select id="region-value">
+				<option value="na1">NA</option>
+				<option value="euw1">EUW</option>
+				<option value="oc1">OCE</option>
+				<option value="eun1">EUNE</option>
+				<option value="la1">LAN</option>
+				<option value="la2">LAS</option>
+				<option value="br1">BR</option>
+				<option value="kr">KR</option>
+				<option value="tr1">TR</option>
+				<option value="ru">RU</option>
+				<option value="jp1">JP</option>
+			</select>
+		</div>
+	</div>
+
+	<div class="profile-board">
+		<div id="profile-icon">
+			<img id="profile-icon-icon" src=""/>
+		</div>
+		<div id="profile-rank">
+			<img id="profile-rank-icon" src="img/unranked.png"/>
+		</div>
+		<h3 id="summoner-name">Placeholder</h3>
+		<p id="summoner-level">Lvl 30</p>
+		<p id="summoner-rank">Rank placeholder</p>
+	</div>
+
+	<footer>
+		<p>2019 HypnotizeD Studios all rights reserved.</p>
+	</footer>
+
+	<div id="root"></div>
+
+	<div class="filter"></div>
+	
+    <!-- MY CODE -->
+	<script src="js/search.js"></script>
+
+</body>
+</html>
